@@ -1,0 +1,28 @@
+[user]
+	name = bigillu
+	email = abhimanyuselvan@protonmail.com
+[alias]
+    amend = commit -a --amend
+    br = branch
+    cl = clean -fd
+    cm = git commit -m
+	co = checkout
+    cob = checkout -b
+    dlbr = branch -d 
+    drbr = push -d orgin
+    ec = config --global -e
+    fod = fetch origin develop
+    lo = log --pretty=oneline
+    lg = log --graph
+    logwho = log --no-merges
+    pod = pull origin develop
+    poadu = push origin origin develop
+    rl = checkout .
+    rmu = clean -d -f
+    save = !git add -A && git commit -m 'SAVEPOINT'
+    st = status     
+    undo = reset HEAD~1 --mixed
+    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+    what = whatchanged
+    wip = commit -am "WIP"
+    wipe = reset --hard HEAD
